@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+   </head>
+   <body onload="load()">
+      <img id="a" src="image/1.jpg "
+      onmouseover="hover();"
+      onmouseout="nohover()">
+      <script>
+         var anh1 = new Image();
+         var anh2 = new Image();
+         function load(){
+            anh1.src = "image/1.jpg";
+            anh2.src = "image/2.jpg";
+         }
+         function hover(){
+            document.getElementById("a").src = anh2.src;
+         }
+         function nohover(){
+            document.getElementById("a").src = anh1.src;
+         }
+      </script>
+   </body>
+</html>
